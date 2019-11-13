@@ -75,7 +75,6 @@ class Utilities {
   	echo '<span>Hello World</span>';
   }
 }
-$custom_fonts = new Utilities();
 $hook = new Utilities();
 
 

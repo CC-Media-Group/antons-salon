@@ -44,4 +44,5 @@ function ccmedia_sanitize_output($buffer) {
 ob_start("ccmedia_sanitize_output");
 
 #### Add Image For MSPA Navigation Menu Item
+$custom_fonts = new Utilities();
 $custom_fonts->ccmedia_add_fonts();
