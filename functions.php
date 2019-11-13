@@ -41,7 +41,9 @@ function ccmedia_sanitize_output($buffer) {
 		$buffer = preg_replace($search, $replace, $buffer);
     return $buffer;
 }
+if ( !is_admin() ) {
 ob_start("ccmedia_sanitize_output");
+}
 
 #### Add Image For MSPA Navigation Menu Item
 $custom_fonts = new Utilities();
